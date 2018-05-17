@@ -7,8 +7,8 @@ using System.Xml;
 
 namespace SpecsFor.Mvc.IIS
 {
-	internal class IISExpressProcess
-	{
+	internal class IISExpressProcess : IWebServerProcess
+    {
 		private readonly string _pathToSite;
 		private Process _iisProcess;
 		private readonly string _applicationHostConfigurationFile;
